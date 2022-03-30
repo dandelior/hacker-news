@@ -1,0 +1,33 @@
+.selector
+    border: solid 1px #2e2e2e
+    border-radius: 4px
+    position: relative
+    width: 240px
+    height: 32px
+    overflow: hidden
+    .front
+        padding: 5px 12px
+        span
+            font-size: 14px
+    .items
+        position: absolute
+        bottom: calc(-46.1px * 3)
+        background-color: white
+        box-shadow: 0 2px 2px 0 #dad8d8
+        .item
+            width: 240px
+            height: 46px
+            padding-left: 12px
+            background-color: white
+            display: flex
+            align-items: center
+            cursor: pointer
+            img
+                margin-top: 4px
+                margin-right: 13px
+                width: 20px
+            span
+                font-size: 14px
+                color: #343434
+            &:hover
+                background-color: rgba(#eaeaea, 0.2)
