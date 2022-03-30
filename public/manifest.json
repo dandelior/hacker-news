@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Hacker News",
+  "name": "Get the latests news from Hackernews",
   "icons": [
     {
       "src": "favicon.ico",

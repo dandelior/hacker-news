@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Newsitem from "./components/NewsItem";
+import Pagination from "./components/pagination";
+import Selector from "./components/selector";
+import Tabs from "./components/tabs";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="theApp">
+      <header>
+        <h1>HACKER NEWS</h1>
       </header>
+      <main>
+        <div className="content">
+          <Tabs />
+
+          <Selector />
+
+          <div className="news-grid">
+            <Newsitem />
+          </div>
+
+          <Pagination />
+        </div>
+      </main>
     </div>
   );
 }
