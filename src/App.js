@@ -1,4 +1,5 @@
-import Newsitem from "./components/NewsItem";
+import Header from "./components/header";
+import Newsitem from "./components/newsItem";
 import Pagination from "./components/pagination";
 import Selector from "./components/selector";
 import Tabs from "./components/tabs";
@@ -6,9 +7,7 @@ import Tabs from "./components/tabs";
 function App() {
   return (
     <div className="theApp">
-      <header>
-        <h1>HACKER NEWS</h1>
-      </header>
+      <Header />
       <main>
         <div className="content">
           <Tabs />
