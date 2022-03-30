@@ -4,6 +4,8 @@ import Pagination from "./components/pagination";
 import Selector from "./components/selector";
 import Tabs from "./components/tabs";
 
+import "./styles/App.sass";
+
 function App() {
   return (
     <div className="theApp">
