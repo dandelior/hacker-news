@@ -1,5 +1,5 @@
 import Header from "./components/header";
-import Newsitem from "./components/newsItem";
+import Newsgrid from "./components/newsGrid";
 import Pagination from "./components/pagination";
 import Selector from "./components/selector";
 import Tabs from "./components/tabs";
@@ -16,9 +16,7 @@ function App() {
 
           <Selector />
 
-          <div className="news-grid">
-            <Newsitem />
-          </div>
+          <Newsgrid />
 
           <Pagination />
         </div>
