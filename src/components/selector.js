@@ -21,24 +21,24 @@ const Selector = () => {
       <div className="items">
         <div className="item">
           <picture>
-            <source srcset={AngularIcon3x} media="(min-width: 1024px)" />
-            <source srcset={AngularIcon2x} media="(min-width: 768px)" />
+            <source srcSet={AngularIcon3x} media="(min-width: 1024px)" />
+            <source srcSet={AngularIcon2x} media="(min-width: 768px)" />
             <img src={AngularIcon} alt="Angular icon" />
           </picture>
           <span>Angular</span>
         </div>
         <div className="item">
           <picture>
-            <source srcset={ReactIcon3x} media="(min-width: 1024px)" />
-            <source srcset={ReactIcon2x} media="(min-width: 768px)" />
+            <source srcSet={ReactIcon3x} media="(min-width: 1024px)" />
+            <source srcSet={ReactIcon2x} media="(min-width: 768px)" />
             <img src={ReactIcon} alt="React icon" />
           </picture>
           <span>Reactjs</span>
         </div>
         <div className="item">
           <picture>
-            <source srcset={VueIcon3x} media="(min-width: 1024px)" />
-            <source srcset={VueIcon2x} media="(min-width: 768px)" />
+            <source srcSet={VueIcon3x} media="(min-width: 1024px)" />
+            <source srcSet={VueIcon2x} media="(min-width: 768px)" />
             <img src={VueIcon} alt="Vue icon" />
           </picture>
           <span>Vuejs</span>

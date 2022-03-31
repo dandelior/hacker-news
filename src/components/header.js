@@ -11,8 +11,8 @@ const Header = () => {
     <header>
       <a href="/">
         <picture>
-          <source srcset={Logo3x} media="(min-width: 1024px)" />
-          <source srcset={Logo2x} media="(min-width: 768px)" />
+          <source srcSet={Logo3x} media="(min-width: 1024px)" />
+          <source srcSet={Logo2x} media="(min-width: 768px)" />
           <img src={Logo} alt="Logo" />
         </picture>
       </a>
