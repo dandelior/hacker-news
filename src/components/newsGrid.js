@@ -3,19 +3,19 @@ import Newsitem from "./newsItem";
 
 import "../styles/components/newsGrid.sass";
 
-const Newsgrid = () => {
+const Newsgrid = ({ query, page }) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
     const getData = async () => {
       return await fetch(
-        "https://hn.algolia.com/api/v1/search_by_date?query=reactjs&hitsPerPage=10&page=0"
+        `https://hn.algolia.com/api/v1/search_by_date?query=${query}&hitsPerPage=8&page=${page}`
       )
         .then((response) => response.json())
         .then((resultData) => setData(resultData));
     };
     getData();
-  }, []);
+  }, [query, page]);
 
   console.log(data);
 
