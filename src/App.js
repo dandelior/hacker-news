@@ -7,16 +7,20 @@ import Tabs from "./components/tabs";
 import "./styles/App.sass";
 
 function App() {
+  const atChangeTab = (e) => {
+    console.log(e);
+  };
+
   return (
     <div className="theApp">
       <Header />
       <main>
         <div className="content">
-          <Tabs />
+          <Tabs detectClick={atChangeTab} />
 
           <Selector />
 
-          <Newsgrid />
+          <Newsgrid query="reactjs" page={0} />
 
           <Pagination />
         </div>
