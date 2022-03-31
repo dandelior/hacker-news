@@ -1,21 +1,28 @@
 import React from "react";
-import Favicon from "./favIcon";
 
+import Favicon from "./favIcon";
 import IconTime from "../assets/icons/icon-time.svg";
 
 import "../styles/components/NewsItem.sass";
 
-const Newsitem = () => {
+const dayjs = require("dayjs");
+var relativeTime = require("dayjs/plugin/relativeTime");
+dayjs.extend(relativeTime);
+
+const Newsitem = ({ title, link, createdAt, author }) => {
   return (
     <div className="news-item">
       <div className="news-info">
         <div className="data">
           <img src={IconTime} alt="icon of time" />
-          <span>3 hours ago by author</span>
+          <span>
+            {/* {createdAt} */}
+            {dayjs(createdAt).fromNow()} by {author}
+          </span>
         </div>
-        <h3 className="title">
-          Yes, React is taking over front-end development. The question is why.
-        </h3>
+        <a href={link} target="_blank" rel="noreferrer">
+          <h3 className="title">{title}</h3>
+        </a>
       </div>
       <div className="news-fav">
         <Favicon />
